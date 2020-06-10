@@ -89,3 +89,48 @@ input[type=text], select, textarea{
       margin-top: 0;
     }
   }
+
+  /* styles for header */
+  body {
+    margin: 0;
+  }
+
+  .header {
+    width: 100%;
+    position: fixed;
+    background: #fff;
+    top: 0;
+    float: left;
+    min-width: 650px;
+  }
+
+  .header-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  nav ul li a {
+    color: #808080;
+    text-decoration: none;
+    padding: 7px 25px;
+    display: block;
+    text-align: center;
+    font-weight: lighter;
+  }
+
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 20%;
+  }
+
+  .header ul li {
+    float: left;
+    padding: 15px 15px;
+    width: 20%;
+  }
+
+  a:hover {
+    color: #333;
+  }
