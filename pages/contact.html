@@ -1,82 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
 
     <!--Custom Styling-->
-      <link rel="stylesheet" href="css/contact.css">
-       
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="../css/header_footer.css" />
+
     <!--Google Fonts and Icons-->
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arapey">
-      <link rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
-<body>
-  <!--Navigation-->
-  <!--HEADER-->
-   <header>
-   </header> 
-  <!--End of Navigation--> 
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Arapey"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <!--Navigation-->
+    <!--HEADER-->
+    <header class="header">
+      <nav>
+        <ul class="container1">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Room & Rate</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--End of Navigation-->
 
-  <!--Form of Contact-->
-   <div class="container1">
-    <h2>Get In Touch With Us</h2>
-   </div>
-   <div class="container1">
-   <p>Have an enquiry or some feedback for us? Fill out the form to contact our team.</p>
-   </div>
+    <!--Form of Contact-->
+    <div class="container1">
+      <h2>Get In Touch With Us</h2>
+    </div>
+    <div class="container1">
+      <p>
+        Have an enquiry or some feedback for us? Fill out the form to contact
+        our team.
+      </p>
+    </div>
 
-   <div class="container">
-    <form action="#" method="post">
-      <div class="row">
-        <div class="col-25">
-          <label for="fname">First Name</label>
+    <div class="container">
+      <form action="#" method="post">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+              aria-required="true"
+              required
+            />
+          </div>
         </div>
-        <div class="col-75">
-          <input type="text" id="fname" name="firstname" placeholder="Your name.." aria-required="true" required>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+              aria-required="true"
+              required
+            />
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="lname">Last Name</label>
+        <div class="row">
+          <div class="col-25">
+            <label for="email">Email Address</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="email"
+              id="email"
+              name="emailaddress"
+              placeholder="Your email address.."
+              aria-required="true"
+              required
+            />
+          </div>
         </div>
-        <div class="col-75">
-          <input type="text" id="lname" name="lastname" placeholder="Your last name.." aria-required="true" required>
+        <div class="row">
+          <div class="col-25">
+            <label for="message">Message</label>
+          </div>
+          <div class="col-75">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write something.."
+              aria-required="true"
+              required
+            ></textarea>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="email">Email Address</label>
+        <div class="row">
+          <input type="submit" value="SEND" />
         </div>
-        <div class="col-75">
-          <input type="email" id="email" name="emailaddress" placeholder="Your email address.." aria-required="true" required>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="message">Message</label>
-        </div>
-        <div class="col-75">
-          <textarea id="message" name="message" placeholder="Write something.." aria-required="true" required></textarea>
-        </div>
-      </div>
-      <div class="row">
-        <input type="submit" value="SEND">
-      </div>
-    </form>
-  </div>
+      </form>
+    </div>
 
-  <div class="container2">
-    <i class="material-icons md-36">email</i> <span class="material">Email:</span>&nbsp;info@starhotel.com
-    <i class="material-icons md-36">place</i> <span class="material">Location:</span>&nbsp;72 Island Street, Nice, France
-    <i class="material-icons md-36">phone</i> <span class="material">Contact Us:</span>&nbsp;+246 789 098
-  </div>
-  <!--End of Form of Contact -->
+    <div class="container2">
+      <i class="material-icons md-36">email</i>
+      <span class="material">Email:</span>&nbsp;info@starhotel.com
+      <i class="material-icons md-36">place</i>
+      <span class="material">Location:</span>&nbsp;72 Island Street, Nice,
+      France <i class="material-icons md-36">phone</i>
+      <span class="material">Contact Us:</span>&nbsp;+246 789 098
+    </div>
+    <!--End of Form of Contact -->
 
-  <!--FOOTER-->
-   <footer>
-   </footer>
-  <!--End of Footer-->
-</body>
+    <!--FOOTER-->
+    <footer></footer>
+    <!--End of Footer-->
+  </body>
 </html>

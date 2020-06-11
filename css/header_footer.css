@@ -1,0 +1,53 @@
+/* styles for header */
+html {
+  padding: 0;
+}
+
+body {
+  max-width: 1080px;
+  padding: 0;
+  margin: 0;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 100%;
+  background: url("../images/bg_contact-us3.jpg") no-repeat border-box center;
+  height: 40vh;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  border: solid 1px transparent;
+}
+
+.header ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header li {
+  display: block;
+  padding: 5%;
+}
+
+.header a {
+  text-decoration: none;
+  color: #808080;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+.header a:hover {
+  color: #333;
+}
+
+.header + div {
+  padding: 5px;
+  /*border: rgb(172, 97, 70) 2px dashed;*/
+}
