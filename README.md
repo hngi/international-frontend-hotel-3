@@ -5,6 +5,7 @@
     1.bony237
     2.brenda Okumu
     3.lateo
+    4.jethro
 
 We will be creating a Hotel website using HTML, CSS and JavaScript using a Design from @Richelle.
 The website contains 5 pages :
