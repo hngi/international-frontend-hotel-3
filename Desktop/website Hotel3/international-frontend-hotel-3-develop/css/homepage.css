@@ -1,0 +1,37 @@
+html { height: 100%; }
+body{
+    width: 100%;
+    min-height: 100%;
+    position:relative;
+    padding-bottom:[footer-height]
+}
+.logo {
+    width: 100px;
+    height:100px;
+    margin: 0;
+  }
+
+
+.header-info {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+nav li{
+    list-style: none;
+    font-size: larger;
+}
+.welcome-message{
+    float: right;
+    margin-top: 5rem;
+}
+
+.footer-info{
+    clear: both;
+    position: absolute; 
+    left: 0 ; right: 0; bottom: 0; 
+    height:[footer-height];
+   }
+
