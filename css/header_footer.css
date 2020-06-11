@@ -1,0 +1,37 @@
+/* styles for header */
+
+body {
+  max-width: 1080px;
+  margin: auto;
+}
+
+.header {
+  background: url("../images/bg_contact-us3.jpg") border-box bottom no-repeat;
+  border: orangered 2px dashed;
+  height: 50vh;
+  font-size: 1.2em;
+}
+
+.header ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header li {
+  display: block;
+  padding: 5%;
+}
+
+.header a {
+  text-decoration: none;
+  color: #808080;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+.header a:hover {
+  color: #333;
+}
