@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" href="./css/slide.css">
+    <script src="https://kit.fontawesome.com/65f1e6a808.js" crossorigin="anonymous"></script>
+    <title>Hotel 3</title>
+
+  </head>
+  <body>
+    <p>Working place before integration of all feature</p>
+    <div class="carousel-container">
+      <i class="fas fa-arrow-left" id="prevBtn"></i>
+      <i class="fas fa-arrow-right" id="nextBtn"></i>
+      <div class="carousel-slide">
+        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(47).jpg" id="lastClone" alt="">
+        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(46).jpg" alt="">
+        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(45).jpg" alt="">
+        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(47).jpg" alt="">
+        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(46).jpg" id="firstClone" alt="">
+      </div>
+    </div>
+    <script type="text/javascript">
+    const carouselSlide = document.querySelector('.carousel-slide');
+    const carouselImages = document.querySelectorAll('.carousel-slide img');
+
+    //Buttons
+    const prevBtn = document.querySelector('#prevBtn');
+    const nextBtn = document.querySelector('#nextBtn');
+
+    //counter
+    let counter = 1;
+    const size = carouselImages[0].clientWidth;
+
+    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+    //Button listeners
+    nextBtn.addEventListener('click', () => {
+      if (counter >= carouselImages.length - 1) return;
+        carouselSlide.style.transition = "transform 0.4s ease-in-out";
+        counter++;
+        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+    });
+
+    prevBtn.addEventListener('click', () => {
+      if (counter <= 0) return;
+        carouselSlide.style.transition = "transform 0.4s ease-in-out";
+        counter--;
+        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+    });
+
+    carouselSlide.addEventListener('transitionend', () => {
+      console.log(carouselImages[counter]);
+      if (carouselImages[counter].id === 'lastClone') {
+        carouselSlide.style.transition = "none";
+        counter = carouselImages.length - 2;
+        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+      }
+
+      if (carouselImages[counter].id === 'firstClone') {
+        carouselSlide.style.transition = "none";
+        counter = carouselImages.length - counter;
+        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    
+      }
+    })
+    
+    </script>
+    
+    <!-- <script src ="slide.js"></script> -->
+
+
+  </body>
+</html>
