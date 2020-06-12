@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
-
-    <!--Custom Styling-->
+    <title>Hotel 3</title>
 
     <link
       rel="stylesheet"
@@ -14,20 +12,10 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="../css/contact.css" />
-
-    <!--Google Fonts and Icons-->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Arapey"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-
+    <link rel="stylesheet" href="../css/facilities.css" />
     <link rel="stylesheet" href="../css/header_footer.css" />
   </head>
+
   <body>
     <!--Navigation-->
     <!--HEADER-->
@@ -98,109 +86,69 @@
         <ul class="container1">
           <li><a href="../index.html">Home</a></li>
           <li><a href="#">Room & Rate</a></li>
-          <li><a href="facilities.html">Facilities</a></li>
-          <li class="active_nav"><a href="#">Contact Us</a></li>
+          <li class="active_nav"><a href="#">Facilities</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </header>
     <!--End of Navigation-->
 
-    <!--Form of Contact-->
-    <div class="container w-50 my-4 text-center">
-      <h2>Get In Touch With Us</h2>
-      <p>
-        Have an enquiry or some feedback for us ? Fill out the form to contact
-        our team.
-      </p>
-    </div>
-
-    <div class="container w-75">
-      <form action="#" method="post" class="">
-        <div class="form-group">
-          <label for="fname">First Name</label>
-          <input
-            type="text"
-            id="fname"
-            name="firstname"
-            placeholder="Your name.."
-            class="form-control"
-            aria-required="true"
-            required
-          />
+    <div class="my-4">
+      <div class="facility">
+        <div>
+          <img src="../images/facility1.jpg" alt="Basketball Court" />
         </div>
-
-        <div class="form-group">
-          <label for="lname">Last Name</label>
-          <input
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Your last name.."
-            class="form-control"
-            aria-required="true"
-            required
-          />
+        <div>
+          <h2>Multipurpose Court</h2>
+          <p>
+            The hotel has a large multipurpose court which serves a space for
+            playing a variety of sports including football, tennis and
+            basketball.
+          </p>
         </div>
-
-        <div class="form-group">
-          <label for="email" class="custom-control-label">Email Address</label>
-          <input
-            type="email"
-            id="email"
-            name="emailaddress"
-            placeholder="Your email address.."
-            aria-required="true"
-            class="form-control"
-            required
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Write something.."
-            aria-required="true"
-            class="form-control"
-            required
-          ></textarea>
-        </div>
-
-        <div class="text-right my-5">
-          <input
-            type="submit"
-            value="SEND"
-            class="form-control btn btn-success col-4 font-weight-bolder"
-          />
-        </div>
-      </form>
-    </div>
-
-    <div
-      class="container my-4 w-100 d-flex flex-wrap flex-row font-weight-lighter"
-    >
-      <div class="m-2 d-flex flex-row">
-        <i class="material-icons">email</i>
-        <span class="material">Email:</span>&nbsp;info@starhotel.com
       </div>
-
-      <div class="m-2 d-flex flex-row">
-        <i class="material-icons">place</i>
-        <span class="material">Location:</span>&nbsp;72 Island Street, Nice,
-        France
+      <hr />
+      <div class="facility inverse">
+        <div>
+          <img src="../images/facility2.jpg" alt="Fitness Center" />
+        </div>
+        <div>
+          <h2>Fitness Center</h2>
+          <p>
+            We have an ultra modern well and equiped gym and wellness center to
+            keep our guest in their best shapes during their stay.
+          </p>
+        </div>
       </div>
-
-      <div class="m-2 d-flex flex-row">
-        <i class="material-icons">phone</i>
-        <span class="material">Contact Us:</span>&nbsp;+246 789 098
+      <hr />
+      <div class="facility inverse">
+        <div>
+          <img src="../images/facility3.jpg" alt="Pool and Spa" />
+        </div>
+        <div>
+          <h2>Pool & Spa</h2>
+          <p>
+            The hotel has a large pool fit for both adults and children. There
+            is also a well equipped spa for those relaxing and self pampering
+            days.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="facility">
+        <div>
+          <img src="../images/facility4.jpg" alt="Restaurant & Bar" />
+        </div>
+        <div>
+          <h2>Restaurant & Bar</h2>
+          <p>
+            Our restaurant and bar is opened 24 hours a day serving a variety of
+            meals, drinks and snacks from across the globe.
+          </p>
+        </div>
       </div>
     </div>
-    <!--End of Form of Contact -->
-
-    <!--FOOTER-->
-    <footer></footer>
-    <!--End of Footer-->
+    <hr />
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -220,5 +168,6 @@
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>-->
   </body>
 </html>
