@@ -28,12 +28,15 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  margin-top: 62px;
+  /*border: solid dashed 7px;*/
 }
 
 .header-hotel3 li {
   display: block;
   margin: 3% 0;
   padding: 2% 5%;
+  border: solid dashed 7px;
 }
 
 .header-hotel3 a {
