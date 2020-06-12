@@ -10,11 +10,6 @@ body {
   margin: 0;
 }
 
-#background-carousel a,
-#background-carousel li {
-  z-index: 10;
-}
-
 .active_nav {
   background-color: rgba(131, 118, 89, 0.794);
   /*border: dashed rebeccapurple 2px;*/
@@ -57,16 +52,21 @@ body {
   /*border: rgb(172, 97, 70) 2px dashed;*/
 }
 
-#background-carousel img {
-  height: 250px;
-}
-
 .header-hotel3 {
   width: 100%;
   position: absolute;
   top: 0;
 
   background-color: rgba(95, 88, 88, 0.356);
+}
+
+#background-carousel a,
+#background-carousel li {
+  z-index: 10;
+}
+
+#background-carousel img {
+  height: 250px;
 }
 
 #background-carousel {
