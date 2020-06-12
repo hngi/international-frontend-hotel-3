@@ -12,7 +12,12 @@
       crossorigin="anonymous"
     />
 
-    <!--<link rel="stylesheet" href="../css/suits_rooms.css" />-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/suits_rooms.css" />
     <link rel="stylesheet" href="../css/header_footer.css" />
   </head>
 
@@ -90,7 +95,7 @@
       </nav>
     </header>
 
-    <div class="container my-2">
+    <div class="container my-2 block_suits_rooms">
       <!-- Luxury Master Rooms -->
       <div class="row my-5">
         <div class="col-md-6 order-md-2">
@@ -314,8 +319,8 @@
       <hr />
     </div>
 
-    <footer>
-      <div d-flex align-items-around>
+    <footer class="bg-light">
+      <div class="d-flex justify-content-around text-white mb-5">
         <span>PRESS</span>
         <span>CAREERS</span>
         <span>PRIVACY POLICY</span>
@@ -324,12 +329,21 @@
         <span>UPDATE RESERVATION</span>
       </div>
 
-      <div class="form-group row">
-        <input type="email" class="form-control" placeholder="STAY IN TOUCH" />
-        <input type="submit" value="SUBMIT" />
+      <div class="form-group row mx-4">
+        <input
+          type="email"
+          class="form-control-sm"
+          placeholder="STAY IN TOUCH"
+        />
+        <input type="submit" value="SUBMIT" class="btn btn-success" />
+        <div class="icons_media d-block col text-right">
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          <i class="fa fa-twitter-square" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </div>
       </div>
-      <div class="icons_media"></div>
-      <p>© THE STARBIRD HOTEL & RESTAURANT 1980 - 2020</p>
+
+      <p class="ml-4">© THE STARBIRD HOTEL & RESTAURANT 1980 - 2020</p>
     </footer>
 
     <script

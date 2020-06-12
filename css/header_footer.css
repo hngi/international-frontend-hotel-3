@@ -5,14 +5,14 @@ html {
 
 body {
   max-width: 1080px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
   padding: 0;
   margin: 0;
   background: url("../images/texture.png") repeat;
 }
 
 .active_nav {
-  background-color: rgba(131, 118, 89, 0.794);
+  background-color: rgba(141, 123, 85, 0.815);
   /*border: dashed rebeccapurple 2px;*/
   border-radius: 7px;
 }
@@ -58,7 +58,7 @@ body {
   position: absolute;
   top: 0;
 
-  background-color: rgba(95, 88, 88, 0.356);
+  background-color: rgba(95, 88, 88, 0.452);
 }
 
 a,
@@ -72,4 +72,20 @@ li {
 
 #background-carousel {
   box-shadow: 0 4px 8px rgb(36, 31, 11);
+}
+
+/*footer styles*/
+
+footer div:first-child {
+  background-color: rgb(12, 11, 11);
+}
+
+footer p,
+footer span {
+  font-size: small;
+  padding: 1.5%;
+}
+
+.icons_media .fa {
+  font-size: 35px;
 }
