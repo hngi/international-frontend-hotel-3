@@ -1,32 +1,30 @@
-
 .carousel .carousel-indicators li {
-    width: 20px;
-   height: 20px;
-   border-radius: 100%;
- }
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
 
-.carousel-inner{
-    border-radius: 20px;
- }
- 
- .img-fluid {
-    min-height: 350px;
-    height: auto;
-    opacity: 0.95;
+.carousel-inner {
+  border-radius: 20px;
+}
+
+.img-fluid {
+  min-height: 350px;
+  height: auto;
+  opacity: 0.95;
 }
 
 .fas {
-    color: white;
+  color: white;
 }
 
-ul  {
-    margin: 0;
-    padding-left: 25px;
+ul {
+  margin: 0;
+  padding-left: 25px;
 }
 ul li {
-    
-    font-size: 25px;
+  font-size: 25px;
 }
 p {
-    font-size: 25px;
+  font-size: 25px;
 }
