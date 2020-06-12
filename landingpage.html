@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Starbird Hotel</title>
+</head>
+<style>
+body{
+        background-image: url(images/palm-trees-at-night-258154.jpg);
+        background: url(images/palm-trees-at-night-258154.jpg) no-repeat center bottom fixed;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+        background-size: cover;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    .top-navbar{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+    .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(53, 6, 50, 0.239);
+    z-index: -5;
+}
+    img.logo{
+        margin-left: 30%;
+        margin-right: 30%;
+        width: 100px;
+       align-self: center;
+    }
+    .contact-no img,
+    .contact-no p,
+    .contact-no button{
+        display: inline-block;
+    }
+
+    .menu{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    a.menu-item {
+        text-decoration: unset; 
+        color: #ffffff
+    }
+    .check-btn{
+        padding: 10px;
+        border: 3px solid #e2f72ae1;
+        background-color:  #e2f72ae1;
+        border-radius: 5px;
+        margin: 20px;
+    }
+    .intro{
+        float: right;  
+        margin: 120px 50px;
+    }   
+    .intro-title{
+        font-size: 1.5rem;
+    }
+    .intro-text{
+        font-weight: 400;
+    }
+    .bookings{
+        clear: both;
+        text-align: center;
+        position: absolute;
+        bottom: 50px;
+       left: 30%;
+       right: 30%;
+    }
+    .book-details{
+        padding: 10px;
+        background-color:  #ffffff;
+        border: 3px solid #ffffff;
+        border-radius: 5px;
+    }
+    
+</style>
+
+<body >
+    <section class="overlay"></section>
+    <nav>
+        <div class="top-navbar">
+            <div>
+                <div class="brand">
+                  <img src="images/logo.png" alt="" class="logo">
+                <p class="hotel-name">THE STARBIRD HOTEL & RESTAURANT</p>   
+                </div>
+               
+            </div>
+            <div class="contact-no">
+                <img src="" alt="" class="Phone-icon">
+                <p > +233 558 123 456</p>
+            
+                <button class="check-btn">
+                    Check Availability
+                </button>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="#" class="menu-item">Home</a>
+            <a href="#" class="menu-item">Suites & Rooms</a>
+            <a href="#" class="menu-item">Dining</a>
+            <a href="#" class="menu-item">Facilities</a>
+            <a href="#" class="menu-item">News & Events</a>
+        </div>
+    </nav>
+    <section>
+        <div class="intro">
+             
+            <p class="intro-title">WELCOME TO OUR PARADISE!</p>
+            <p class="intro-text">We hope you have a lovely stay</p>
+        </div>
+        <div class="bookings">
+            <button class="book-details" >
+                ARRIVAL -DEPARTURE
+            </button>
+            <button class="book-details"> GUESTS </button>
+            <button class="check-btn">CHECK RATES </button> 
+        </div>
+    </section>
+</body>
+
+</html>
