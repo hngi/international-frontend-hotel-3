@@ -8,6 +8,7 @@
     4.jethro
     5.ariana
     6.m-tee
+    7.fely
 
 We will be creating a Hotel website using HTML, CSS and JavaScript using a Design from @Richelle.
 The website contains 5 pages :
