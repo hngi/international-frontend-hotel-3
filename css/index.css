@@ -1,0 +1,131 @@
+#background-carousel img {
+  max-width: 2500px;
+  max-height: 1600px;
+  height: 100vh;
+  min-height: 400px;
+}
+
+html {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#background-carousel {
+  box-shadow: 0 0 8px rgb(36, 31, 11);
+}
+
+#background-carousel a,
+#background-carousel li {
+  z-index: 10;
+}
+
+@media (max-width: 600px) {
+  #background-carousel img {
+    height: 80vh;
+  }
+}
+
+/* styles for header */
+html {
+  padding: 0;
+}
+
+body {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.active_nav {
+  background-color: rgba(131, 118, 89, 0.794);
+  /*border: dashed rebeccapurple 2px;*/
+  border-radius: 7px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+}
+
+.header-hotel3 ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 6px;
+}
+
+.header-hotel3 li {
+  display: block;
+  margin: 3% 0;
+  padding: 2% 5%;
+}
+
+.header-hotel3 a {
+  text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+.header-hotel3 li:not(.active_nav) a:hover {
+  color: #333;
+  text-shadow: 2px 2px 8px whitesmoke;
+}
+
+.header-hotel3 + div {
+  padding: 5px;
+  /*border: rgb(172, 97, 70) 2px dashed;*/
+}
+
+.header-hotel3 nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+
+  background-color: rgba(95, 88, 88, 0.452);
+}
+
+.slogan {
+  position: absolute;
+  top: 33%;
+  right: 0;
+  color: #ffffff;
+  background-color: rgba(95, 88, 88, 0.63);
+  padding: 2% 2% 1% 2%;
+  border-radius: 5px 0 0 5px;
+  font-size: smaller;
+}
+
+.slogan p:last-child,
+.incitensive_info .btn p:last-child {
+  font-size: 0.65em;
+}
+
+.incitensive_info {
+  position: absolute;
+  bottom: 8%;
+}
+
+.logo_section {
+  position: absolute;
+  top: 0;
+  left: 2%;
+  z-index: 10;
+  width: 100%;
+  color: #ffffff;
+}
+
+.logo_block {
+  width: 50px;
+  height: 50px;
+}
+
+.logo_block img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

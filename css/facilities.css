@@ -1,0 +1,84 @@
+p {
+  font-size: medium;
+}
+
+h1 {
+  margin: 2px;
+}
+
+.facility {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 25px;
+  padding: auto;
+}
+
+.inverse div:first-child {
+  order: 2;
+}
+
+.inverse div:last-child {
+  order: 1;
+}
+
+/*Style image block of the facility*/
+.facility div:first-child {
+  width: 40vw;
+  height: 152px;
+  border-radius: 10px;
+}
+
+/*Style text of the facility*/
+.facility div:last-child {
+  margin: 0;
+  padding-top: 0;
+  width: 50vw;
+}
+
+.facility img {
+  width: 100%;
+  height: 152px;
+  border-radius: 5px;
+  box-shadow: -2px 2px 8px black;
+}
+
+@media (max-width: 500px) {
+  p,
+  h1 {
+    text-align: center;
+  }
+  .facility div:first-child {
+    /* debugger */
+    /*border: orangered 2px dashed;*/
+    width: auto;
+    height: auto;
+  }
+
+  .facility div:last-child {
+    /* debugger 
+    border: orangered 2px dashed;*/
+    width: 90%;
+    height: auto;
+    margin-right: 45px;
+  }
+
+  .inverse {
+    flex-wrap: wrap-reverse;
+  }
+
+  hr {
+    display: none;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .facility img {
+    width: 100%;
+    height: 90%;
+  }
+}
