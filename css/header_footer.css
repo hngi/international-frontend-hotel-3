@@ -1,0 +1,116 @@
+/* styles for header */
+html {
+  padding: 0;
+}
+
+body {
+  max-width: 1080px;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  background: url("../images/texture.png") repeat;
+}
+
+.active_nav {
+  background-color: rgba(141, 123, 85, 0.815);
+  /*border: dashed rebeccapurple 2px;*/
+  border-radius: 7px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+}
+
+.header-hotel3 ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 62px;
+  /*border: solid dashed 7px;*/
+}
+
+.header-hotel3 li {
+  display: block;
+  margin: 3% 0;
+  padding: 2% 5%;
+  border: solid dashed 7px;
+}
+
+.header-hotel3 a {
+  text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+.header-hotel3 li:not(.active_nav) a:hover {
+  color: #333;
+  text-shadow: 2px 2px 8px whitesmoke;
+}
+
+.header-hotel3 + div {
+  padding: 5px;
+  /*border: rgb(172, 97, 70) 2px dashed;*/
+}
+
+.header-hotel3 {
+  width: 100%;
+  position: absolute;
+  top: 0;
+
+  background-color: rgba(95, 88, 88, 0.452);
+}
+
+a,
+li {
+  z-index: 10;
+}
+
+#background-carousel img {
+  height: 250px;
+}
+
+#background-carousel {
+  box-shadow: 0 4px 8px rgb(36, 31, 11);
+}
+
+/*footer styles*/
+
+footer div:first-child {
+  background-color: rgb(12, 11, 11);
+}
+
+footer p,
+footer span {
+  font-size: small;
+  padding: 1.5%;
+}
+
+.icons_media .fa {
+  font-size: 35px;
+}
+
+/*logo section on the header*/
+
+.logo_section {
+  position: absolute;
+  top: 0;
+  left: 2%;
+  z-index: 10;
+  width: 100%;
+  color: #ffffff;
+}
+
+.logo_block {
+  width: 50px;
+  height: 50px;
+}
+
+.logo_block img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
